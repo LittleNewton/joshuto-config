@@ -48,6 +48,9 @@ keymap = [
   { keys = ["ctrl+b"], command= "cursor_move_page_up" },
   { keys = ["ctrl+f"], command= "cursor_move_page_down" },
 
+  # Custom: lazyGit
+  { keys = ["ctrl+g"], command= "shell lazygit" },
+
   # vim-like keybindings
   { keys = ["j"], command= "cursor_move_down" },
   { keys = ["k"], command= "cursor_move_up" },
@@ -99,13 +102,14 @@ keymap = [
   { keys = [";"], command= ":" },
 
   { keys = ["'"], command= ":shell " },
+  { keys = ["S"], command= "shell zsh" },
   { keys = ["m", "k"], command= ":mkdir " },
   { keys = ["c", "w"], command= ":rename " },
 
   { keys = ["/"], command= ":search " },
   { keys = ["|"], command= ":search_inc " },
   { keys = ["\\"], command= ":search_glob " },
-  { keys = ["S"], command= "search_fzf" },
+  # { keys = ["S"], command= "search_fzf" },
   { keys = ["C"], command= "subdir_fzf" },
 
   { keys = ["n"], command= "search_next" },
